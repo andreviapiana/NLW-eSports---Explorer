@@ -13,4 +13,4 @@ A página em formato desktop é vista na imagem abaixo:
 - CSS
 - Git e GitHub
 
-[O resultado final pode ser visto aqui]()
+[O resultado final pode ser visto aqui](https://andreviapiana.github.io/NLW-eSports-Explorer/)
