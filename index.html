@@ -10,6 +10,12 @@
     <title>NLW Esports - André Viapiana</title>
     
     <link rel="stylesheet" href="./styles.css">
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
 </head>
 <body>
     
@@ -24,12 +30,14 @@
     <main>
 
         <section>
-            <div>
+            <div class="games">
                 <h2>Meus jogos</h2>
                 <p>Os games que eu mais curto jogar!</p>
 
-                <ul class="games-list">
-                    <li>
+                <div class="swiper mySwiper">
+
+                    <ul class="games-list swiper-wrapper">
+                    <li class="swiper-slide">
                         <a 
                             target="_blank"
                             href="https://www.twitch.tv/directory/game/iRacing">
@@ -37,7 +45,7 @@
                         </a>
                     </li>
 
-                    <li>
+                    <li class="swiper-slide">
                         <a 
                             target="_blank"
                             href="https://www.twitch.tv/directory/game/PUBG%3A%20BATTLEGROUNDS">
@@ -45,7 +53,7 @@
                         </a>
                     </li>
 
-                    <li>
+                    <li class="swiper-slide">
                         <a 
                             target="_blank"
                             href="https://www.twitch.tv/directory/game/Euro%20Truck%20Simulator%202">
@@ -53,7 +61,7 @@
                         </a>
                     </li>
 
-                    <li>
+                    <li class="swiper-slide">
                         <a 
                             target="_blank"
                             href="https://www.twitch.tv/directory/game/Red%20Dead%20Redemption%202">
@@ -61,14 +69,57 @@
                         </a>
                     </li>
 
-                    <li>
+                    <li class="swiper-slide">
                         <a 
                             target="_blank"
                             href="https://www.twitch.tv/directory/game/Tom%20Clancy's%20Rainbow%20Six%20Siege">
                             <img src="https://static-cdn.jtvnw.net/ttv-boxart/460630-188x250.jpg" alt="Capa do jogo Tom Clancy's Rainbow Six Siege">
                         </a>
                     </li>
-                </ul>
+
+                    <li class="swiper-slide">
+                        <a 
+                            target="_blank"
+                            href="https://www.twitch.tv/directory/game/Assetto%20Corsa%20Competizione">
+                            <img src="https://static-cdn.jtvnw.net/ttv-boxart/1348809580_IGDB-188x250.jpg" alt="Capa do jogo Assetto Corsa Competizione">
+                        </a>
+                    </li>
+
+                    <li class="swiper-slide">
+                        <a 
+                            target="_blank"
+                            href="https://www.twitch.tv/directory/game/Grand%20Theft%20Auto%20V">
+                            <img src="https://static-cdn.jtvnw.net/ttv-boxart/32982_IGDB-188x250.jpg" alt="Capa do jogo GTA V">
+                        </a>
+                    </li>
+
+                    <li class="swiper-slide">
+                        <a 
+                            target="_blank"
+                            href="https://www.twitch.tv/directory/game/Counter-Strike%3A%20Global%20Offensive">
+                            <img src="https://static-cdn.jtvnw.net/ttv-boxart/32399_IGDB-188x250.jpg" alt="Capa do jogo CS:GO">
+                        </a>
+                    </li>
+
+                    <li class="swiper-slide">
+                        <a 
+                            target="_blank"
+                            href="https://www.twitch.tv/directory/game/Escape%20from%20Tarkov">
+                            <img src="https://static-cdn.jtvnw.net/ttv-boxart/491931_IGDB-188x250.jpg" alt="Capa do jogo Escape from Tarkov">
+                        </a>
+                    </li>
+
+                    <li class="swiper-slide">
+                        <a 
+                            target="_blank"
+                            href="https://www.twitch.tv/directory/game/Battlefield%202042">
+                            <img src="https://static-cdn.jtvnw.net/ttv-boxart/514974_IGDB-188x250.jpg" alt="Capa do jogo Battlefield 2042">
+                        </a>
+                    </li>
+
+                    </ul>
+
+                </div>
             </div>
         </section>
 
@@ -185,6 +236,17 @@
             </div>
         </section>
     </main>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        new Swiper(".mySwiper", {
+            slidesPerView: 5,
+            loop: true
+        });
+      </script>
 
 </body>
 </html>

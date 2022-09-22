@@ -59,6 +59,8 @@ main {
 
     display: grid;
     gap: 24px;
+
+    overflow: hidden;
 }
 
 section {
@@ -154,4 +156,14 @@ main section:nth-child(3) {
         opacity: 1;
         transform: translateY(0)
     }
+}
+
+/* ============================== SWIPER ============================== */
+section {
+    overflow: hidden;
+}
+
+.games ul {
+    flex-wrap: nowrap;
+    gap: 0;
 }
